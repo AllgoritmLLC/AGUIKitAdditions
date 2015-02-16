@@ -22,23 +22,12 @@
 //    SOFTWARE.
 //
 
-#import "UIViewController+AGAdditionsActivity.h"
+#import <UIKit/UIKit.h>
 
-#import "UIView+AGAdditionsActivity.h"
+@interface UIView (AGAdditionsActivity)
 
-@implementation UIViewController (AGAdditionsActivity)
-
-#pragma mark - public
-- (void) showActivity {
-    [self.view showActivity];
-}
-
-- (void) hideActivity {
-    [self.view hideActivity];
-}
-
-- (void) hideActivityTotal {
-    [self.view hideActivityTotal];
-}
+- (void) showActivity;
+- (void) hideActivity;
+- (void) hideActivityTotal;
 
 @end

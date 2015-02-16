@@ -25,6 +25,7 @@
 #ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
 #define AGUIKitAdditionsExamples_AGUIKitAdditions_h
 
+#import "UIView+AGAdditionsActivity.h"
 #import "UIViewController+AGAdditionsActivity.h"
 
 #endif
