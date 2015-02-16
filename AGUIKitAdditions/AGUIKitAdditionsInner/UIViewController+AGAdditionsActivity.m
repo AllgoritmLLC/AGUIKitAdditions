@@ -43,10 +43,43 @@
                                                                      options:0
                                                                      metrics:@{@"height":   @(view.bounds.size.height)}
                                                                        views:@{@"view":     view}]];
+        view.hidden = YES;
+        view.translatesAutoresizingMaskIntoConstraints = NO;
+        
         UIActivityIndicatorView* activity = [self activityIndicator];
-        activity.center = CGPointMake(view.bounds.size.width / 2,
-                                      view.bounds.size.height / 2);
+        activity.translatesAutoresizingMaskIntoConstraints = NO;
         [view addSubview:activity];
+        
+        [view addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                         attribute:NSLayoutAttributeCenterX
+                                                         relatedBy:0
+                                                            toItem:activity
+                                                         attribute:NSLayoutAttributeCenterX
+                                                        multiplier:1
+                                                          constant:0]];
+        [view addConstraint:[NSLayoutConstraint constraintWithItem:view
+                                                         attribute:NSLayoutAttributeCenterY
+                                                         relatedBy:0
+                                                            toItem:activity
+                                                         attribute:NSLayoutAttributeCenterY
+                                                        multiplier:1
+                                                          constant:0]];
+        
+        [self.view addSubview:view];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view
+                                                              attribute:NSLayoutAttributeCenterX
+                                                              relatedBy:0
+                                                                 toItem:view
+                                                              attribute:NSLayoutAttributeCenterX
+                                                             multiplier:1
+                                                               constant:0]];
+        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view
+                                                              attribute:NSLayoutAttributeCenterY
+                                                              relatedBy:0
+                                                                 toItem:view
+                                                              attribute:NSLayoutAttributeCenterY
+                                                             multiplier:1
+                                                               constant:0]];
         
         objc_setAssociatedObject(self, @selector(vActivity), view, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
@@ -87,12 +120,8 @@
 #pragma mark - public
 - (void) showActivity {
     if ([self shownTimes] == 0) {
-        self.vActivity.center = CGPointMake(self.view.bounds.size.width / 2,
-                                            self.view.bounds.size.height / 2);
-        [self.view addSubview:self.vActivity];
-        
+        self.vActivity.hidden = NO;
         [self.activityIndicator startAnimating];
-        
         self.view.userInteractionEnabled = NO;
     }
     [self setShownTimes:[self shownTimes] + 1];
@@ -100,7 +129,7 @@
 
 - (void) hideActivity {
     if ([self shownTimes] == 1) {
-        [self.vActivity removeFromSuperview];
+        self.vActivity.hidden = YES;
         self.view.userInteractionEnabled = YES;
     }
     [self setShownTimes:[self shownTimes] - 1];
