@@ -22,9 +22,12 @@
 //    SOFTWARE.
 //
 
-#ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
-#define AGUIKitAdditionsExamples_AGUIKitAdditions_h
+#import <UIKit/UIKit.h>
 
-#import "UIViewController+AGAdditionsActivity.h"
+@interface UIViewController (AGAdditionsActivity)
 
-#endif
+- (void) showActivity;
+- (void) hideActivity;
+- (void) hideActivityTotal;
+
+@end

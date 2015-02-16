@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */; };
 		BA9A2AFD1A91D75F006914A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2AFC1A91D75F006914A7 /* main.m */; };
 		BA9A2B001A91D760006914A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2AFF1A91D760006914A7 /* AppDelegate.m */; };
 		BA9A2B031A91D760006914A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B021A91D760006914A7 /* ViewController.m */; };
@@ -14,7 +15,6 @@
 		BA9A2B081A91D760006914A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2B071A91D760006914A7 /* Images.xcassets */; };
 		BA9A2B0B1A91D760006914A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2B091A91D760006914A7 /* LaunchScreen.xib */; };
 		BA9A2B171A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B161A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m */; };
-		BA9A2B251A91D95C006914A7 /* UIViewController+AGUIKitAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B241A91D95C006914A7 /* UIViewController+AGUIKitAdditions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA95114A1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGAdditionsActivity.h"; sourceTree = "<group>"; };
+		BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGAdditionsActivity.m"; sourceTree = "<group>"; };
 		BA9A2AF71A91D75F006914A7 /* AGUIKitAdditionsExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGUIKitAdditionsExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A2AFB1A91D75F006914A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9A2AFC1A91D75F006914A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,8 +44,6 @@
 		BA9A2B151A91D760006914A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9A2B161A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGUIKitAdditionsExamplesTests.m; sourceTree = "<group>"; };
 		BA9A2B221A91D91C006914A7 /* AGUIKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGUIKitAdditions.h; sourceTree = "<group>"; };
-		BA9A2B231A91D95C006914A7 /* UIViewController+AGUIKitAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGUIKitAdditions.h"; sourceTree = "<group>"; };
-		BA9A2B241A91D95C006914A7 /* UIViewController+AGUIKitAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGUIKitAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,8 +136,8 @@
 		BA9A2B211A91D907006914A7 /* AGUIKitAdditionsInner */ = {
 			isa = PBXGroup;
 			children = (
-				BA9A2B231A91D95C006914A7 /* UIViewController+AGUIKitAdditions.h */,
-				BA9A2B241A91D95C006914A7 /* UIViewController+AGUIKitAdditions.m */,
+				BA95114A1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.h */,
+				BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */,
 			);
 			path = AGUIKitAdditionsInner;
 			sourceTree = "<group>";
@@ -243,9 +243,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9A2B031A91D760006914A7 /* ViewController.m in Sources */,
+				BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */,
 				BA9A2B001A91D760006914A7 /* AppDelegate.m in Sources */,
 				BA9A2AFD1A91D75F006914A7 /* main.m in Sources */,
-				BA9A2B251A91D95C006914A7 /* UIViewController+AGUIKitAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
