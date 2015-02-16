@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */; };
 		BA95114F1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */; };
+		BA9511521A921BC0009D8438 /* UITableView+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */; };
+		BA9511551A921DD8009D8438 /* UIView+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9511541A921DD8009D8438 /* UIView+AGAdditions.m */; };
 		BA9A2AFD1A91D75F006914A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2AFC1A91D75F006914A7 /* main.m */; };
 		BA9A2B001A91D760006914A7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2AFF1A91D760006914A7 /* AppDelegate.m */; };
 		BA9A2B031A91D760006914A7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B021A91D760006914A7 /* ViewController.m */; };
@@ -33,6 +35,10 @@
 		BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGAdditionsActivity.m"; sourceTree = "<group>"; };
 		BA95114D1A91EE5D009D8438 /* UIView+AGAdditionsActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGAdditionsActivity.h"; sourceTree = "<group>"; };
 		BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGAdditionsActivity.m"; sourceTree = "<group>"; };
+		BA9511501A921BC0009D8438 /* UITableView+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AGAdditions.h"; sourceTree = "<group>"; };
+		BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AGAdditions.m"; sourceTree = "<group>"; };
+		BA9511531A921DD8009D8438 /* UIView+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGAdditions.h"; sourceTree = "<group>"; };
+		BA9511541A921DD8009D8438 /* UIView+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGAdditions.m"; sourceTree = "<group>"; };
 		BA9A2AF71A91D75F006914A7 /* AGUIKitAdditionsExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AGUIKitAdditionsExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9A2AFB1A91D75F006914A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9A2AFC1A91D75F006914A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -143,6 +149,10 @@
 				BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */,
 				BA95114A1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.h */,
 				BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */,
+				BA9511531A921DD8009D8438 /* UIView+AGAdditions.h */,
+				BA9511541A921DD8009D8438 /* UIView+AGAdditions.m */,
+				BA9511501A921BC0009D8438 /* UITableView+AGAdditions.h */,
+				BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */,
 			);
 			path = AGUIKitAdditionsInner;
 			sourceTree = "<group>";
@@ -247,9 +257,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA9511551A921DD8009D8438 /* UIView+AGAdditions.m in Sources */,
 				BA9A2B031A91D760006914A7 /* ViewController.m in Sources */,
 				BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */,
 				BA95114F1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m in Sources */,
+				BA9511521A921BC0009D8438 /* UITableView+AGAdditions.m in Sources */,
 				BA9A2B001A91D760006914A7 /* AppDelegate.m in Sources */,
 				BA9A2AFD1A91D75F006914A7 /* main.m in Sources */,
 			);

@@ -22,13 +22,19 @@
 //    SOFTWARE.
 //
 
-#ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
-#define AGUIKitAdditionsExamples_AGUIKitAdditions_h
-
-#import "UIView+AGAdditionsActivity.h"
-#import "UIViewController+AGAdditionsActivity.h"
-
 #import "UIView+AGAdditions.h"
-#import "UITableView+AGAdditions.h"
 
-#endif
+@implementation UIView (AGAdditions)
+
+- (void) sizeToHugContent {
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+    
+    CGFloat height = [self systemLayoutSizeFittingSize:UILayoutFittingCompressedSize].height;
+    CGRect frame = self.frame;
+    
+    frame.size.height = height;
+    self.frame = frame;
+}
+
+@end

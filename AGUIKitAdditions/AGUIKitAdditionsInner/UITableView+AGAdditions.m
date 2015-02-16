@@ -22,13 +22,16 @@
 //    SOFTWARE.
 //
 
-#ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
-#define AGUIKitAdditionsExamples_AGUIKitAdditions_h
-
-#import "UIView+AGAdditionsActivity.h"
-#import "UIViewController+AGAdditionsActivity.h"
-
-#import "UIView+AGAdditions.h"
 #import "UITableView+AGAdditions.h"
 
-#endif
+#import "UIView+AGAdditions.h"
+
+@implementation UITableView (AGAdditions)
+
+- (void) sizeTableHeaderViewToFit {
+    UIView* view = self.tableHeaderView;
+    [view sizeToHugContent];
+    self.tableHeaderView = view;
+}
+
+@end

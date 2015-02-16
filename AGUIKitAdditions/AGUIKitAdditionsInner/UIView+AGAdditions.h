@@ -22,13 +22,10 @@
 //    SOFTWARE.
 //
 
-#ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
-#define AGUIKitAdditionsExamples_AGUIKitAdditions_h
+#import <UIKit/UIKit.h>
 
-#import "UIView+AGAdditionsActivity.h"
-#import "UIViewController+AGAdditionsActivity.h"
+@interface UIView (AGAdditions)
 
-#import "UIView+AGAdditions.h"
-#import "UITableView+AGAdditions.h"
+- (void) sizeToHugContent;
 
-#endif
+@end
