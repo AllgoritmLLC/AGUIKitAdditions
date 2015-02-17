@@ -26,6 +26,16 @@
 
 @interface UIView (AGAdditions)
 
+#pragma mark - nib
++ (UINib*) nib;
+
++ (NSArray*) loadNib;
++ (NSArray*) loadNibWithOwner:(id)owner;
+
++ (instancetype) viewFromNib;
++ (instancetype) viewFromNibWithOwner:(id)owner;
+
+#pragma mark - content hugging
 - (void) sizeToHugContent;
 
 @end

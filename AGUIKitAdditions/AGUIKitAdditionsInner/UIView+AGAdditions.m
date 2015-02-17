@@ -26,6 +26,27 @@
 
 @implementation UIView (AGAdditions)
 
+#pragma mark - nib
++ (UINib*) nib {
+    return [UINib nibWithNibName:NSStringFromClass(self)
+                          bundle:nil];
+}
+
++ (NSArray*) loadNib {
+    return [self loadNibWithOwner:nil];
+}
++ (NSArray*) loadNibWithOwner:(id)owner {
+    return [[self nib] instantiateWithOwner:owner options:nil];
+}
+
++ (instancetype) viewFromNib {
+    return [self viewFromNibWithOwner:nil];
+}
++ (instancetype) viewFromNibWithOwner:(id)owner {
+    return [[self loadNibWithOwner:owner] firstObject];
+}
+
+#pragma mark - content hugging
 - (void) sizeToHugContent {
     [self setNeedsLayout];
     [self layoutIfNeeded];
