@@ -26,6 +26,8 @@
 
 @interface UITableView (AGAdditions)
 
+- (void) removeEmptyCells;
+
 - (void) sizeTableHeaderViewToFit;
 
 @end

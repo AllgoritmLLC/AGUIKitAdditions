@@ -28,6 +28,12 @@
 
 @implementation UITableView (AGAdditions)
 
+- (void) removeEmptyCells {
+    UIView* fakeFooter = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+    fakeFooter.backgroundColor = [UIColor clearColor];
+    self.tableFooterView = fakeFooter;
+}
+
 - (void) sizeTableHeaderViewToFit {
     UIView* view = self.tableHeaderView;
     [view sizeToHugContent];
