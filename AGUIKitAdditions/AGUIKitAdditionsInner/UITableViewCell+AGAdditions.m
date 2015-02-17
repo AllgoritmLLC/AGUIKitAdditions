@@ -30,4 +30,12 @@
     return NSStringFromClass(self);
 }
 
++ (CGFloat) height {
+    return 44.0f;
+}
+
++ (CGFloat) estimatedHeight {
+    return [self height];
+}
+
 @end

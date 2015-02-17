@@ -28,4 +28,7 @@
 
 + (NSString*) reuseIdentifier;
 
++ (CGFloat) height;
++ (CGFloat) estimatedHeight;
+
 @end
