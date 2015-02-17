@@ -29,6 +29,9 @@
 #import "UIViewController+AGAdditionsActivity.h"
 
 #import "UIView+AGAdditions.h"
+#import "UIViewController+AGAdditions.h"
+
 #import "UITableView+AGAdditions.h"
+#import "UITableViewCell+AGAdditions.h"
 
 #endif
