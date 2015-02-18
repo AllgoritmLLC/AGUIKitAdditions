@@ -19,6 +19,7 @@
 		BA9A2B171A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B161A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m */; };
 		BAC497221A9497900093434D /* UIView+AGActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC4971F1A9497900093434D /* UIView+AGActivity.m */; };
 		BAC497231A9497900093434D /* UIViewController+AGActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC497211A9497900093434D /* UIViewController+AGActivity.m */; };
+		BAC497261A9498790093434D /* UIViewController+AGKeyboardHide.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC497251A9498790093434D /* UIViewController+AGKeyboardHide.m */; };
 		BAC94FE11A93360600C59202 /* UITableViewCell+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		BAC4971F1A9497900093434D /* UIView+AGActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGActivity.m"; sourceTree = "<group>"; };
 		BAC497201A9497900093434D /* UIViewController+AGActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGActivity.h"; sourceTree = "<group>"; };
 		BAC497211A9497900093434D /* UIViewController+AGActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGActivity.m"; sourceTree = "<group>"; };
+		BAC497241A9498790093434D /* UIViewController+AGKeyboardHide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGKeyboardHide.h"; sourceTree = "<group>"; };
+		BAC497251A9498790093434D /* UIViewController+AGKeyboardHide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGKeyboardHide.m"; sourceTree = "<group>"; };
 		BAC94FDF1A93360600C59202 /* UITableViewCell+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AGAdditions.h"; sourceTree = "<group>"; };
 		BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AGAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +163,8 @@
 				BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */,
 				BAC94FDF1A93360600C59202 /* UITableViewCell+AGAdditions.h */,
 				BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */,
+				BAC497241A9498790093434D /* UIViewController+AGKeyboardHide.h */,
+				BAC497251A9498790093434D /* UIViewController+AGKeyboardHide.m */,
 			);
 			path = AGUIKitAdditionsInner;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 				BA0B1CD91A9339F7006F9E21 /* UIViewController+AGAdditions.m in Sources */,
 				BA9A2AFD1A91D75F006914A7 /* main.m in Sources */,
 				BAC497221A9497900093434D /* UIView+AGActivity.m in Sources */,
+				BAC497261A9498790093434D /* UIViewController+AGKeyboardHide.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
