@@ -22,11 +22,11 @@
 //    SOFTWARE.
 //
 
-#import "UIViewController+AGAdditionsActivity.h"
+#import "UIViewController+AGActivity.h"
 
-#import "UIView+AGAdditionsActivity.h"
+#import "UIView+AGActivity.h"
 
-@implementation UIViewController (AGAdditionsActivity)
+@implementation UIViewController (AGActivity)
 
 #pragma mark - public
 - (void) showActivity {

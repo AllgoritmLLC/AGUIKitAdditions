@@ -24,7 +24,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIViewController (AGAdditionsActivity)
+@interface UIViewController (AGActivity)
 
 - (void) showActivity;
 - (void) hideActivity;

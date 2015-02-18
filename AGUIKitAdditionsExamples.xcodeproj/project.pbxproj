@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BA0B1CD91A9339F7006F9E21 /* UIViewController+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0B1CD81A9339F7006F9E21 /* UIViewController+AGAdditions.m */; };
-		BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */; };
-		BA95114F1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */; };
 		BA9511521A921BC0009D8438 /* UITableView+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */; };
 		BA9511551A921DD8009D8438 /* UIView+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9511541A921DD8009D8438 /* UIView+AGAdditions.m */; };
 		BA9A2AFD1A91D75F006914A7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2AFC1A91D75F006914A7 /* main.m */; };
@@ -19,6 +17,8 @@
 		BA9A2B081A91D760006914A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2B071A91D760006914A7 /* Images.xcassets */; };
 		BA9A2B0B1A91D760006914A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA9A2B091A91D760006914A7 /* LaunchScreen.xib */; };
 		BA9A2B171A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9A2B161A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m */; };
+		BAC497221A9497900093434D /* UIView+AGActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC4971F1A9497900093434D /* UIView+AGActivity.m */; };
+		BAC497231A9497900093434D /* UIViewController+AGActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC497211A9497900093434D /* UIViewController+AGActivity.m */; };
 		BAC94FE11A93360600C59202 /* UITableViewCell+AGAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */; };
 /* End PBXBuildFile section */
 
@@ -35,10 +35,6 @@
 /* Begin PBXFileReference section */
 		BA0B1CD71A9339F7006F9E21 /* UIViewController+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGAdditions.h"; sourceTree = "<group>"; };
 		BA0B1CD81A9339F7006F9E21 /* UIViewController+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGAdditions.m"; sourceTree = "<group>"; };
-		BA95114A1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGAdditionsActivity.h"; sourceTree = "<group>"; };
-		BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGAdditionsActivity.m"; sourceTree = "<group>"; };
-		BA95114D1A91EE5D009D8438 /* UIView+AGAdditionsActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGAdditionsActivity.h"; sourceTree = "<group>"; };
-		BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGAdditionsActivity.m"; sourceTree = "<group>"; };
 		BA9511501A921BC0009D8438 /* UITableView+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+AGAdditions.h"; sourceTree = "<group>"; };
 		BA9511511A921BC0009D8438 /* UITableView+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+AGAdditions.m"; sourceTree = "<group>"; };
 		BA9511531A921DD8009D8438 /* UIView+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGAdditions.h"; sourceTree = "<group>"; };
@@ -57,6 +53,10 @@
 		BA9A2B151A91D760006914A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA9A2B161A91D760006914A7 /* AGUIKitAdditionsExamplesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGUIKitAdditionsExamplesTests.m; sourceTree = "<group>"; };
 		BA9A2B221A91D91C006914A7 /* AGUIKitAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGUIKitAdditions.h; sourceTree = "<group>"; };
+		BAC4971E1A9497900093434D /* UIView+AGActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AGActivity.h"; sourceTree = "<group>"; };
+		BAC4971F1A9497900093434D /* UIView+AGActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AGActivity.m"; sourceTree = "<group>"; };
+		BAC497201A9497900093434D /* UIViewController+AGActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AGActivity.h"; sourceTree = "<group>"; };
+		BAC497211A9497900093434D /* UIViewController+AGActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AGActivity.m"; sourceTree = "<group>"; };
 		BAC94FDF1A93360600C59202 /* UITableViewCell+AGAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+AGAdditions.h"; sourceTree = "<group>"; };
 		BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+AGAdditions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,17 +79,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BA0B1CD61A9339D8006F9E21 /* activity */ = {
-			isa = PBXGroup;
-			children = (
-				BA95114D1A91EE5D009D8438 /* UIView+AGAdditionsActivity.h */,
-				BA95114E1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m */,
-				BA95114A1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.h */,
-				BA95114B1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m */,
-			);
-			name = activity;
-			sourceTree = "<group>";
-		};
 		BA9A2AEE1A91D75E006914A7 = {
 			isa = PBXGroup;
 			children = (
@@ -162,7 +151,7 @@
 		BA9A2B211A91D907006914A7 /* AGUIKitAdditionsInner */ = {
 			isa = PBXGroup;
 			children = (
-				BA0B1CD61A9339D8006F9E21 /* activity */,
+				BAC4971D1A9497900093434D /* AGActivity */,
 				BA9511531A921DD8009D8438 /* UIView+AGAdditions.h */,
 				BA9511541A921DD8009D8438 /* UIView+AGAdditions.m */,
 				BA0B1CD71A9339F7006F9E21 /* UIViewController+AGAdditions.h */,
@@ -173,6 +162,17 @@
 				BAC94FE01A93360600C59202 /* UITableViewCell+AGAdditions.m */,
 			);
 			path = AGUIKitAdditionsInner;
+			sourceTree = "<group>";
+		};
+		BAC4971D1A9497900093434D /* AGActivity */ = {
+			isa = PBXGroup;
+			children = (
+				BAC4971E1A9497900093434D /* UIView+AGActivity.h */,
+				BAC4971F1A9497900093434D /* UIView+AGActivity.m */,
+				BAC497201A9497900093434D /* UIViewController+AGActivity.h */,
+				BAC497211A9497900093434D /* UIViewController+AGActivity.m */,
+			);
+			path = AGActivity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,13 +277,13 @@
 			files = (
 				BA9511551A921DD8009D8438 /* UIView+AGAdditions.m in Sources */,
 				BA9A2B031A91D760006914A7 /* ViewController.m in Sources */,
-				BA95114C1A91EB3D009D8438 /* UIViewController+AGAdditionsActivity.m in Sources */,
 				BAC94FE11A93360600C59202 /* UITableViewCell+AGAdditions.m in Sources */,
-				BA95114F1A91EE5D009D8438 /* UIView+AGAdditionsActivity.m in Sources */,
+				BAC497231A9497900093434D /* UIViewController+AGActivity.m in Sources */,
 				BA9511521A921BC0009D8438 /* UITableView+AGAdditions.m in Sources */,
 				BA9A2B001A91D760006914A7 /* AppDelegate.m in Sources */,
 				BA0B1CD91A9339F7006F9E21 /* UIViewController+AGAdditions.m in Sources */,
 				BA9A2AFD1A91D75F006914A7 /* main.m in Sources */,
+				BAC497221A9497900093434D /* UIView+AGActivity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

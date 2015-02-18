@@ -22,11 +22,11 @@
 //    SOFTWARE.
 //
 
-#import "UIView+AGAdditionsActivity.h"
+#import "UIView+AGActivity.h"
 
 #import <objc/runtime.h>
 
-@implementation UIView (AGAdditionsActivity)
+@implementation UIView (AGActivity)
 
 #pragma mark - associated objects
 - (UIView *) vActivity {
