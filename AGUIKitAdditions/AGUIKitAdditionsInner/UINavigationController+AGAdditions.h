@@ -22,18 +22,29 @@
 //    SOFTWARE.
 //
 
-#ifndef AGUIKitAdditionsExamples_AGUIKitAdditions_h
-#define AGUIKitAdditionsExamples_AGUIKitAdditions_h
+#import <UIKit/UIKit.h>
 
-#import "UIView+AGActivity.h"
-#import "UIViewController+AGActivity.h"
+@interface UINavigationController (AGAdditions)
 
-#import "UIView+AGAdditions.h"
-#import "UIViewController+AGAdditions.h"
++ (UIBarButtonItem*) navBarItemWithTitle:(NSString*)title
+                              titleColor:(UIColor*)titleColor
+                   titleColorHighlighted:(UIColor*)titleColorHighlighted
+                                  target:(id)target
+                                  action:(SEL)action;
 
-#import "UITableView+AGAdditions.h"
-#import "UITableViewCell+AGAdditions.h"
 
-#import "UINavigationController+AGAdditions.h"
++ (UIBarButtonItem*) navBarItemWithImage:(UIImage*)image
+                        imageHighlighted:(UIImage*)imageHighlighted
+                                  target:(id)target
+                                  action:(SEL)action;
 
-#endif
+
++ (UIBarButtonItem*) navBarItemWithImage:(UIImage*)image
+                        imageHighlighted:(UIImage*)imageHighlighted
+                                   title:(NSString*)title
+                              titleColor:(UIColor*)titleColor
+                   titleColorHighlighted:(UIColor*)titleColorHighlighted
+                                  target:(id)target
+                                  action:(SEL)action;
+
+@end
