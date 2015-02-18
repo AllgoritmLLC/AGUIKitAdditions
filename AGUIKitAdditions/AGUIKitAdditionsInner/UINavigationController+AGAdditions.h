@@ -47,4 +47,6 @@
                                   target:(id)target
                                   action:(SEL)action;
 
++ (UIBarButtonItem*) navBarItemSpaceWithWidth:(CGFloat)width;
+
 @end

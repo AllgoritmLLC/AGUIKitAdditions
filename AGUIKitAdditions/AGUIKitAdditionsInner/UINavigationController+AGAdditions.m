@@ -96,8 +96,26 @@
      forControlEvents:UIControlEventTouchUpInside];
     }
     
+    [bn sizeToFit];
+    CGRect frame = bn.frame;
+    if (frame.size.height < 44) {
+        frame.size.height = 44;
+    }
+    if (frame.size.width < 44) {
+        frame.size.width = 44;
+    }
+    bn.frame = frame;
+    
     return [[UIBarButtonItem alloc] initWithCustomView:bn];
 }
 
++ (UIBarButtonItem*) navBarItemSpaceWithWidth:(CGFloat)width {
+    
+    UIBarButtonItem* item = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace
+                                                                          target:nil
+                                                                          action:nil];
+    item.width = width;
+    return item;
+}
 
 @end
