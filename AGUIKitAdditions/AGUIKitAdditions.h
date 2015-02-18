@@ -36,4 +36,6 @@
 
 #import "UINavigationController+AGAdditions.h"
 
+#import "UIViewController+AGKeyboardHide.h"
+
 #endif
