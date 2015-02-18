@@ -30,4 +30,6 @@
 
 - (void) sizeTableHeaderViewToFit;
 
+- (void) removeHeaderOffsetForGrouppedStyle;
+
 @end

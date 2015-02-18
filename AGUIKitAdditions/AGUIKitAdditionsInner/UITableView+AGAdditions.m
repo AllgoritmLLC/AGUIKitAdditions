@@ -40,4 +40,9 @@
     self.tableHeaderView = view;
 }
 
+- (void) removeHeaderOffsetForGrouppedStyle {
+    self.tableHeaderView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 1)];
+    self.tableHeaderView.backgroundColor = [UIColor clearColor];
+}
+
 @end
