@@ -38,4 +38,28 @@
 #pragma mark - content hugging
 - (void) sizeToHugContent;
 
+#pragma mark - container view
+- (void) useAsContainerForView:(UIView*)contentView;
+- (void) useAsContainerForView:(UIView*)contentView
+                usingTopLayout:(id<UILayoutSupport>)topLayout
+                  bottomLayout:(id<UILayoutSupport>)bottomLayout;
+
+#pragma mark - addSubview
+- (void) addSubview:(UIView *)view
+   withTopNeighbour:(id)topNeighbour
+        topDistance:(NSNumber*)topDistance
+    bottomNeighbour:(id)bottomNeighbour
+     bottomDistance:(NSNumber*)bottomDistance
+   leadingNeighbour:(id)leadingNeighbour
+    leadingDistance:(NSNumber*)leadingDistance
+  trailingNeighbour:(id)trailingNeighbour
+   trailingDistance:(NSNumber*)trailingDistance;
+    
+#define kUIViewAGAdditionsConstraintVisualFormat    @"kUIViewAGAdditionsConstraintVisualFormat"
+#define kUIViewAGAdditionsConstraintOptions         @"kUIViewAGAdditionsConstraintOptions"
+#define kUIViewAGAdditionsConstraintMetrics         @"kUIViewAGAdditionsConstraintMetrics"
+#define kUIViewAGAdditionsConstraintViews           @"kUIViewAGAdditionsConstraintViews"
+- (void) addSubview:(UIView *)view
+     withLayoutInfo:(NSArray*)layoutInfo;
+
 @end

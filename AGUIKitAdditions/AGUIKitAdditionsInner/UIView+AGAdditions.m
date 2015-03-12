@@ -58,4 +58,108 @@
     self.frame = frame;
 }
 
+#pragma mark - container view
+- (void) useAsContainerForView:(UIView*)contentView {
+    [self useAsContainerForView:contentView
+                 usingTopLayout:nil
+                   bottomLayout:nil];
+}
+
+- (void) useAsContainerForView:(UIView*)contentView
+                usingTopLayout:(id<UILayoutSupport>)topLayout
+                  bottomLayout:(id<UILayoutSupport>)bottomLayout {
+    
+    for (UIView* subview in self.subviews) {
+        if ([subview conformsToProtocol:@protocol(UILayoutSupport)] == NO) {
+            [subview removeFromSuperview];
+        }
+    }
+    
+    [self addSubview:contentView
+    withTopNeighbour:topLayout
+         topDistance:nil
+     bottomNeighbour:bottomLayout
+      bottomDistance:nil
+    leadingNeighbour:nil
+     leadingDistance:nil
+   trailingNeighbour:nil
+    trailingDistance:nil];
+}
+
+#pragma mark - addSubview
+- (void) addSubview:(UIView *)view
+   withTopNeighbour:(id)topNeighbour
+        topDistance:(NSNumber*)topDistance
+    bottomNeighbour:(id)bottomNeighbour
+     bottomDistance:(NSNumber*)bottomDistance
+   leadingNeighbour:(id)leadingNeighbour
+    leadingDistance:(NSNumber*)leadingDistance
+  trailingNeighbour:(id)trailingNeighbour
+   trailingDistance:(NSNumber*)trailingDistance {
+   
+    NSMutableDictionary* dictViews = [NSMutableDictionary new];
+    dictViews[@"subview"] = view;
+    if (topNeighbour) {
+        dictViews[@"top"] = topNeighbour;
+    }
+    if (bottomNeighbour) {
+        dictViews[@"bottom"] = bottomNeighbour;
+    }
+    if (leadingNeighbour) {
+        dictViews[@"leading"] = leadingNeighbour;
+    }
+    if (trailingNeighbour) {
+        dictViews[@"trailing"] = trailingNeighbour;
+    }
+    
+    NSMutableDictionary* dictMetrics = [NSMutableDictionary new];
+    if (topDistance) {
+        dictMetrics[@"distTop"] = topDistance;
+    }
+    if (bottomDistance) {
+        dictMetrics[@"distBottom"] = bottomDistance;
+    }
+    if (leadingDistance) {
+        dictMetrics[@"distLeading"] = leadingDistance;
+    }
+    if (trailingDistance) {
+        dictMetrics[@"distTrailing"] = trailingDistance;
+    }
+    
+    NSMutableArray* layoutInfo = [NSMutableArray new];
+    [layoutInfo addObject:@{kUIViewAGAdditionsConstraintVisualFormat:  [NSString stringWithFormat:@"V:%@%@[subview]%@%@",
+                                                                        topNeighbour ? @"[top]": @"|",
+                                                                        topDistance ? @"-distTop-": @"",
+                                                                        bottomNeighbour ? @"[bottom]" : @"|",
+                                                                        bottomDistance ? @"-distBottom-": @""],
+                             kUIViewAGAdditionsConstraintMetrics:       dictMetrics,
+                             kUIViewAGAdditionsConstraintViews:         dictViews}];
+    [layoutInfo addObject:@{kUIViewAGAdditionsConstraintVisualFormat:  [NSString stringWithFormat:@"H:%@%@[subview]%@%@",
+                                                                        leadingNeighbour ? @"[leading]": @"|",
+                                                                        leadingDistance ? @"-distLeading-": @"",
+                                                                        trailingNeighbour ? @"[trailing]" : @"|",
+                                                                        trailingDistance ? @"-distTrailing-": @""],
+                             kUIViewAGAdditionsConstraintMetrics:       dictMetrics,
+                             kUIViewAGAdditionsConstraintViews:         dictViews}];
+    [self addSubview:view
+      withLayoutInfo:layoutInfo];
+}
+
+- (void) addSubview:(UIView *)view
+     withLayoutInfo:(NSArray*)layoutInfo {
+    
+    view.translatesAutoresizingMaskIntoConstraints = NO;
+    [self addSubview:view];
+    
+    for (NSDictionary* constraintsDict in layoutInfo) {
+        [self addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:constraintsDict[kUIViewAGAdditionsConstraintVisualFormat]
+                                                                     options:[constraintsDict[kUIViewAGAdditionsConstraintOptions] integerValue]
+                                                                     metrics:constraintsDict[kUIViewAGAdditionsConstraintMetrics]
+                                                                       views:constraintsDict[kUIViewAGAdditionsConstraintViews]]];
+    }
+    
+    [self setNeedsLayout];
+    [self layoutIfNeeded];
+}
+
 @end
